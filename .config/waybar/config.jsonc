@@ -1,0 +1,133 @@
+{
+  "height": 27,
+  "spacing": 0,
+  "margin-top": 10,
+  "margin-left": 15,
+  "margin-right": 15,
+  "modules-left": [
+    "hyprland/workspaces",
+    "hyprland/window",
+  ],
+  "modules-center": [
+    "clock",
+  ],
+  "modules-right": [
+    "hyprland/language",
+    // "custom/cmus",
+    "pulseaudio",
+    "custom/mic",
+    "battery",
+    "tray",
+  ],
+
+  "hyprland/workspaces": {
+      "format": "{icon}",
+      "on-click": "activate",
+      "tooltip": false,
+      "escape": true,
+  },
+  // "custom/cmus": {
+  //     "format": "{icon} {}",
+  //     "format-icons": {
+  //       "default": [
+  //         "<span color='#cba6f7'></span>"
+  //       ]
+  //     },
+  //     "max-length": 45,
+  //     "interval": 1,
+  //     "exec": "cmus-remote -C \"format_print '%F'\"",
+  //     "exec-if": "pgrep cmus",
+  //     "on-click": "cmus-remote -u",
+  //     "on-scroll-up": "cmus-remote --next",
+  //     "on-scroll-down": "cmus-remote --prev",
+  //     "escape": true,
+  //     "tooltip": false
+  // },
+  "hyprland/language": {
+      "format": "<span color='#89b4fa'></span> {}",
+      "format-en": "󰌌 en",
+      "format-ru": "󰌌 ru",
+  },
+  "battery": {
+    "bat": "BAT1",
+    "interval": 60,
+    "states": {
+        "warning": 30,
+        "critical": 20,
+    },
+    "format": "<span color='#a6e3a1'>{icon}</span> {capacity}%",
+    "format-icons": {
+      "charging": [
+        "󰢜",
+        "󰂆",
+        "󰂇",
+        "󰂈",
+        "󰢝",
+        "󰂉",
+        "󰢞",
+        "󰂊",
+        "󰂋",
+        "󰂅"
+      ],
+      "default": [
+        "󰁺",
+        "󰁻",
+        "󰁼",
+        "󰁽",
+        "󰁾",
+        "󰁿",
+        "󰂀",
+        "󰂁",
+        "󰂂",
+        "󰁹"
+      ],
+    },
+    "max-length": 25
+  },
+  "pulseaudio": {
+    "scroll-step": 5,
+    "format": "<span color='#f9e2af'>{icon}</span> {volume}%",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "default": [
+        "",
+        "",
+        "",
+      ],
+    },
+    "on-click": "pavucontrol",
+    "tooltip": false,
+  },
+  "clock": {
+    "format": "<span color='#89dceb'>󰥔</span> {:%H:%M}",
+    "tooltip-format": "<big><span color='#89dceb'>{:%Y %B}</span></big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": "<span color='#89dceb'></span> <span color='#89dceb'>{:%d.%m.%Y}</span>",
+    "calendar": {
+      "mode": "month",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#cdd6f4'><b>{}</b></span>",
+        "days": "<span color='#cdd6f4'><b>{}</b></span>",
+        "weeks": "<span color='#f5c2e7'><b>W{}</b></span>",
+        "weekdays": "<span color='#f5c2e7'><b>{}</b></span>",
+        "today": "<span color='#eba0ac'><b><u>{}</u></b></span>",
+      },
+    },
+    "actions": {
+      "on-click-right": "mode",
+      "on-click-forward": "tz_up",
+      "on-click-backward": "tz_down",
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down",
+    },
+  },
+  "custom/mic": {
+    "exec": "~/.local/bin/mic.sh",
+    "signal": 1,
+    "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle && pkill -RTMIN+1 waybar"
+  }
+}
