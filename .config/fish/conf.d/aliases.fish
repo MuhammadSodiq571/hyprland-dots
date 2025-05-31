@@ -4,16 +4,21 @@ alias clock='tty-clock -scC 4'
 alias nf='fastfetch --config ~/.config/fastfetch/all.jsonc --logo-color-2 magenta'
 alias ff='fastfetch'
 alias pf='fastfetch --config ~/.config/fastfetch/2.jsonc'
+alias pacrep='pacman -Q | grep'
 alias enru='trans en:ru'
 alias ruen='trans ru:en'
 alias enuz='trans en:uz'
 alias uzen='trans uz:en'
-alias suspend='echo mem | doas tee /sys/power/state'
+alias suspend='echo mem | sudo tee /sys/power/state'
 
-abbr -a pmi doas pacman -S
-abbr -a pmr doas pacman -Rns
-abbr -a dv doas vim
-abbr -a dn doas nvim
+abbr -a pm sudo pacman
+abbr -a pms sudo pacman -S
+abbr -a pmq pacman -Q
+abbr -a parus paru -S
+abbr -a pmr paru -Rns
+abbr -a grep grep -i
+abbr -a dv sudo vim
+abbr -a dn sudo nvim
 abbr -a b btop
 abbr -a c clear
 abbr -a g git
