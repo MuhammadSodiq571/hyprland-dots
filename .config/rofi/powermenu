@@ -3,9 +3,9 @@
 option=$(printf "   Shutdown\n   Reboot\n   Lock" | rofi -dmenu -p 'Power Menu' -i -theme powermenu)
 
 case "$option" in
-  "   Shutdown") poweroff ;;
-  "   Reboot") reboot ;;
-  "   Lock") hyprlock ;;
+  "   Shutdown") sudo /sbin/poweroff ;;
+  "   Reboot") sudo /sbin/reboot ;;
+  "   Lock") /bin/hyprlock ;;
   *) exit 0 ;;
 esac
 

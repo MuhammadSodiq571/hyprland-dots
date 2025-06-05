@@ -126,7 +126,8 @@
     },
   },
   "custom/mic": {
-    "exec": "~/.local/bin/mic.sh",
+    "format": "<span color='#eba0ac'>{}</span>",
+    "exec": "pactl get-source-mute @DEFAULT_SOURCE@ | grep 'Mute: yes' > /dev/null && echo -e '󰍭' || echo \"󰍬 $(pactl get-source-volume @DEFAULT_SOURCE@ | awk '{printf $5}' | tr -d '%')%\"",
     "signal": 1,
     "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle && pkill -RTMIN+1 waybar"
   }

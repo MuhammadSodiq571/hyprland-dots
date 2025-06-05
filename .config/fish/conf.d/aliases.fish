@@ -1,10 +1,10 @@
 alias ls='lsd -1'
 alias la='lsd -la'
 alias clock='tty-clock -scC 4'
-alias nf='fastfetch --config ~/.config/fastfetch/all.jsonc --logo-color-2 magenta'
+alias nf='fastfetch --config all'
 alias ff='fastfetch'
-alias pf='fastfetch --config ~/.config/fastfetch/2.jsonc'
-alias pacrep='pacman -Q | grep'
+alias pf='fastfetch --config ~/.config/fastfetch/2.jsonc --logo artix2_small'
+alias pacrep='pacman -Q | grep -i'
 alias enru='trans en:ru'
 alias ruen='trans ru:en'
 alias enuz='trans en:uz'
@@ -13,7 +13,6 @@ alias suspend='echo mem | sudo tee /sys/power/state'
 
 abbr -a pm sudo pacman
 abbr -a pms sudo pacman -S
-abbr -a pmq pacman -Q
 abbr -a parus paru -S
 abbr -a pmr paru -Rns
 abbr -a grep grep -i
