@@ -1,6 +1,6 @@
 #!/bin/sh
 
-option=$(printf "   Shutdown\n   Reboot\n   Lock" | rofi -dmenu -p 'Power Menu' -i -theme powermenu)
+option=$(printf "   Shutdown\n   Reboot\n   Lock" | rofi -replace -dmenu -p 'Power Menu' -i -theme powermenu)
 
 case "$option" in
   "   Shutdown") sudo /sbin/poweroff ;;
