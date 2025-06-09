@@ -4,7 +4,6 @@
 # https://github.com/ryanoasis/vim-devicons
 import re
 import os
-from subprocess import run
 
 # all those glyphs will show as weird squares if you don't have the correct patched font
 # My advice is to use NerdFonts which can be found here:
@@ -204,31 +203,7 @@ file_node_extensions = {
     'zsh': '',
 }
 
-# user = run(['whoami'], capture_output=True, text=True)
-# downloads = run(['fish', '-c', 'xdg-user-dir DOWNLOAD | path basename'],
-#                 capture_output=True, text=True)
-# documents = run(['fish', '-c', 'xdg-user-dir DOCUMENTS | path basename'],
-#                 capture_output=True, text=True)
-# photos = run(['fish', '-c', 'xdg-user-dir PICTURES | path basename'],
-#              capture_output=True, text=True)
-# videos = run(['fish', '-c', 'xdg-user-dir VIDEOS | path basename'],
-#              capture_output=True, text=True)
-# templates = run(['fish', '-c', 'xdg-user-dir TEMPLATES | path basename'],
-#                 capture_output=True, text=True)
-# public = run(['fish', '-c', 'xdg-user-dir PUBLICSHARE | path basename'],
-#              capture_output=True, text=True)
-# music = run(['fish', '-c', 'xdg-user-dir MUSIC | path basename'],
-#             capture_output=True, text=True)
-
 dir_node_exact_matches = {
-    # user.stdout.strip(): '󰋜',
-    # downloads.stdout.strip(): '',
-    # documents.stdout.strip(): '',
-    # photos.stdout.strip(): '',
-    # videos.stdout.strip(): '',
-    # public.stdout.strip(): '',
-    # templates.stdout.strip(): '',
-    # music.stdout.strip(): '',
     'documents'     : '',
     'downloads'     : '',
     'videos'        : '',

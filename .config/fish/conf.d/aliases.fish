@@ -9,10 +9,9 @@ alias enru='trans en:ru'
 alias ruen='trans ru:en'
 alias enuz='trans en:uz'
 alias uzen='trans uz:en'
-alias suspend='echo mem | sudo tee /sys/power/state'
 
-abbr -a pm sudo pacman
-abbr -a pms sudo pacman -S
+abbr -a pm pacman
+abbr -a pms paru -S
 abbr -a parus paru -S
 abbr -a pmr paru -Rns
 abbr -a grep grep -i
@@ -33,4 +32,3 @@ abbr -a ... cd ../..
 abbr -a .... cd ../../..
 
 bind \co rangercd\n
-bind \cy yazicd\n

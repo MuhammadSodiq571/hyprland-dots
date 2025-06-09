@@ -15,12 +15,3 @@ function rangercd
         end
     end
 end
-
-function yazicd
-    set -l tmp $(mktemp)
-    yazi $argv --cwd-file=$tmp
-    if test -f $tmp
-        cd (cat $tmp)
-        rm -f $tmp
-    end
-end

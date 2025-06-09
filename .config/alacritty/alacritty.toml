@@ -24,7 +24,7 @@ style = "BoldItalic"
 save_to_clipboard = true
 
 [window]
-opacity = 0.6
+opacity = 0.5
 
 [window.padding]
 x = 10
