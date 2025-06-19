@@ -204,10 +204,11 @@ file_node_extensions = {
 }
 
 dir_node_exact_matches = {
+    'desktop'       : '',
     'documents'     : '',
     'downloads'     : '',
     'videos'        : '',
-    'muhammadsodiq' : '󰋜',
+    'user'          : '󰋜',
     'photos'        : '',
 }
 

@@ -1,3 +1,8 @@
 #!/bin/sh
 
-cliphist list | rofi -dmenu -p "Clipboard" -replace -theme ~/.config/rofi/cliphist.rasi | cliphist decode | wl-copy
+cliphist list | \
+    rofi -dmenu -replace \
+    -p "Clipboard" \
+    -theme ~/.config/rofi/cliphist.rasi | \
+    cliphist decode | \
+    wl-copy

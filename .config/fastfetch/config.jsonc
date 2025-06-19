@@ -108,18 +108,18 @@
       "keyColor": "green",
     },
     {
-      "type": "swap",
-      "key": "│ ├󰓡 ",
-      "keyColor": "green",
-    },
-    {
       "type": "sound",
       "key": "│ ├ ",
       "keyColor": "green",
     },
     {
       "type": "display",
-      "key": "│ └󰍹 ",
+      "key": "│ ├󰍹 ",
+      "keyColor": "green",
+    },
+    {
+      "type": "swap",
+      "key": "│ └󰓡 ",
       "keyColor": "green",
     },
     {
