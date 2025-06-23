@@ -1,4 +1,4 @@
-configuration{
+configuration {
     modi: "run,drun,window";
     lines: 5;
     font: "JetBrainsMono Nerd Font 14";
@@ -9,6 +9,9 @@ configuration{
     location: 0;
     disable-history: true;
     drun-use-cache: false;
+    drun-match-fields: "name";
+    matching: "fuzzy";
+    sort: true;
     hide-scrollbar: true;
     display-drun: "   Apps ";
     display-run: "   Run ";
