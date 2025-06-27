@@ -1,10 +1,10 @@
 alias ls='lsd -1'
 alias la='lsd -la'
-alias clock='tty-clock -scC 4'
-alias nf='fastfetch --config all'
+alias clock='tty-clock -scC 3'
+alias nf='fastfetch -c all'
 alias ff='fastfetch'
-alias pf='fastfetch --config ~/.config/fastfetch/2.jsonc --logo artix2_small'
-alias pacrep='pacman -Q | grep -i'
+alias pf='fastfetch -c ~/.config/fastfetch/2.jsonc -l artix2_small'
+alias pacrep='pacman -Q'
 alias enru='trans en:ru'
 alias ruen='trans ru:en'
 alias enuz='trans en:uz'
@@ -15,21 +15,19 @@ abbr -a pm pacman
 abbr -a pms paru -S
 abbr -a parus paru -S
 abbr -a pmr paru -Rns
-abbr -a grep grep -i
-abbr -a dv sudo vim
-abbr -a dn sudo nvim
+abbr -a grepi grep -i
 abbr -a b btop
 abbr -a c clear
 abbr -a g git
 abbr -a gcl git clone
+abbr -a gr git remote
 abbr -a ga git add .
 abbr -a gc git commit -m
 abbr -a gp git push
-abbr -a gpo git push origin
+abbr -a gpl git pull
 abbr -a gco git checkout
 abbr -a gs git status
 abbr -a gb git branch
 abbr -a ... cd ../..
-abbr -a .... cd ../../..
 
 bind \co rangercd\n
