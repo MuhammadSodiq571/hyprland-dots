@@ -1,5 +1,5 @@
 function fish_prompt
-    set -g __last_command_exit_status $status
+    set -g __exit_status $status
 
     if not set -q -g __fish_arrow_functions_defined
         set -g __fish_arrow_functions_defined
@@ -57,7 +57,7 @@ function fish_prompt
     end
 
     set -l arrow_color (set_color -o green)
-    if test $__last_command_exit_status != 0
+    if test $__exit_status != 0
         set arrow_color (set_color -o red)
     end
 
@@ -83,12 +83,32 @@ function fish_prompt
 end
 
 function fish_right_prompt
-    switch $__last_command_exit_status
+    switch $__exit_status
         case 0
             echo ''
         case '*'
             set_color -o brred
-            echo -n $__last_command_exit_status
+            echo -n $__exit_status
             set_color -o normal
     end
+
+    if test $CMD_DURATION
+        if test $CMD_DURATION -gt 10000
+            set -l duration (echo "$CMD_DURATION 1000" | awk '{printf "%.3fs", $1 / $2}')
+            set cmd (history | head -1)
+            set -l maxlen 20
+
+            if test (string length -- $cmd) -gt $maxlen
+                set cmd (string sub -l $maxlen -- $cmd)"..."
+            end
+
+            switch $__exit_status
+                case 0
+                    notify-send -i dialog-information 'Command completed' (echo "$cmd\n$__exit_status after $duration")
+                case '*'
+                    notify-send -u critical -i dialog-error 'Command completed' (echo "$cmd\n$__exit_status after $duration")
+            end
+        end
+    end
 end
+

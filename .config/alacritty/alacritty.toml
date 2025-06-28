@@ -27,8 +27,8 @@ save_to_clipboard = true
 opacity = 0.5
 
 [window.padding]
-x = 10
-y = 10
+x = 5
+y = 5
 
 [keyboard]
 bindings = [

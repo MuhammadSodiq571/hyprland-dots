@@ -79,7 +79,8 @@
       "keyColor": "blue",
     },
     {
-      "type": "host",
+      "type": "command",
+      "text": "cat /sys/class/dmi/id/board_vendor",
       "key": "󰌢 PC",
       "keyColor": "green",
     },

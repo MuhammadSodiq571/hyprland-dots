@@ -13,7 +13,6 @@
   ],
   "modules-right": [
     "hyprland/language",
-    // "custom/cmus",
     "pulseaudio",
     "custom/mic",
     "battery",
@@ -26,23 +25,6 @@
       "tooltip": false,
       "escape": true,
   },
-  // "custom/cmus": {
-  //     "format": "{icon} {}",
-  //     "format-icons": {
-  //       "default": [
-  //         "<span color='#cba6f7'></span>"
-  //       ]
-  //     },
-  //     "max-length": 45,
-  //     "interval": 1,
-  //     "exec": "cmus-remote -C \"format_print '%F'\"",
-  //     "exec-if": "pgrep cmus",
-  //     "on-click": "cmus-remote -u",
-  //     "on-scroll-up": "cmus-remote --next",
-  //     "on-scroll-down": "cmus-remote --prev",
-  //     "escape": true,
-  //     "tooltip": false
-  // },
   "hyprland/language": {
       "format": "<span color='#89b4fa'></span> {}",
       "format-en": "󰌌 en",
