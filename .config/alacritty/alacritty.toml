@@ -2,7 +2,7 @@
 unfocused_hollow = true
 
 [font]
-size = 13
+size = 16
 
 [font.normal]
 family = "JetBrainsMono Nerd Font"
@@ -40,23 +40,23 @@ bindings = [
 primary = { background = "#282828" }
 
 [colors.normal]
-black = "#0a0b0b"
-red = "#cc241d"
-green = "#98971a"
-yellow = "#d79921"
-blue = "#458588"
-magenta = "#b16286"
-cyan = "#689d6a"
-white = "#a89984"
+black = "#4D5264"
+red = "#E15050"
+green = "#AEBA40"
+yellow = "#E1B563"
+blue = "#46B3C9"
+magenta = "#988BCC"
+cyan = "#85D3E3"
+white = "#DFDED8"
 
 [colors.bright]
-black = "#928374"
+black = "#5C6075"
 red = "#fb4934"
-green = "#b8bb26"
+green = "#AAC755"
 yellow = "#fabd2f"
-blue = "#83a598"
-magenta = "#d3869b"
-cyan = "#8ec07c"
-white = "#ebdbb2"
+blue = "#5DBBCD"
+magenta = "#CA9EE6"
+cyan = "#9AE6E5"
+white = "#DEDDD7"
 
 

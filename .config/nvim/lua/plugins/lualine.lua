@@ -6,7 +6,7 @@ return {
       options = {
         fmt = string.lower,
         icons_enabled = true,
-        theme = 'gruvbox-material',
+        theme = 'dracula',
         component_separators = '',
         section_separators = { left = '', right = '' },
         -- a b c won't take the entire statusline
