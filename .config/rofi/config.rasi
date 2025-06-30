@@ -9,7 +9,7 @@ configuration {
     location: 0;
     disable-history: true;
     drun-use-cache: false;
-    drun-match-fields: "name";
+    // drun-match-fields: "name";
     matching: "fuzzy";
     sort: true;
     hide-scrollbar: true;

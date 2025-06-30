@@ -96,7 +96,7 @@ function fish_right_prompt
         if test $CMD_DURATION -gt 10000
             set -l duration (echo "$CMD_DURATION 1000" | awk '{printf "%.3fs", $1 / $2}')
             set cmd (history | head -1)
-            set -l excluded nano vi vim nvim helix htop btop top man bat more less
+            set -l excluded nano vi vim nvim helix htop btop top man bat more less swaybg
             set -l maxlen 20
 
             for ex in $excluded
