@@ -51,9 +51,9 @@ white = "#DFDED8"
 
 [colors.bright]
 black = "#5C6075"
-red = "#fb4934"
+red = "#FB4934"
 green = "#AAC755"
-yellow = "#fabd2f"
+yellow = "#FABD2F"
 blue = "#5DBBCD"
 magenta = "#CA9EE6"
 cyan = "#9AE6E5"

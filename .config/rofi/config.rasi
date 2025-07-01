@@ -28,7 +28,6 @@ window {
     width: 500px;
     height: 450px;
     border: 1px;
-    // border-color: #fe8019;
     background-color: #2e2e2e;
 }
 
@@ -44,7 +43,7 @@ inputbar {
 }
 
 prompt {
-    background-color: #7aa2f7;
+    background-color: #46B3C9;
     padding: 6px;
     text-color: #2e2e2e;
     border-radius: 10px;
@@ -59,7 +58,7 @@ textbox-prompt-colon {
 entry {
     padding: 6px;
     margin: 20px 0px 0px 10px;
-    text-color: #fe8019;
+    text-color: #68CE3B;
     background-color: #2e2e2e;
     placeholder: "Search";
 }
@@ -85,7 +84,7 @@ element-icon {
 
 element selected {
     background-color: #383838;
-    text-color: #fe8019;
+    text-color: #68CE3B;
 }
 
 mode-switcher {
@@ -102,7 +101,7 @@ button {
 
 button selected {
   background-color: #2e2e2e;
-  text-color: #fe8019;
+  text-color: #68CE3B;
 }
 
 
