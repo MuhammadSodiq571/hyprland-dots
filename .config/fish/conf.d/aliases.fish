@@ -9,7 +9,7 @@ alias enru='trans en:ru'
 alias ruen='trans ru:en'
 alias enuz='trans en:uz'
 alias uzen='trans uz:en'
-alias lsblk='sudo lsblk -f'
+alias lsblk='sudo lsblk -fo NAME,FSTYPE,LABEL,FSAVAIL,FSUSE%,MOUNTPOINTS'
 
 abbr -a pm pacman
 abbr -a pms paru -S
