@@ -60,7 +60,7 @@ vim.api.nvim_create_autocmd('BufWinEnter', {
 })
 
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "lua", "jsonc" },
+  pattern = { "lua", "json", "jsonc", "css" },
   callback = function()
     vim.opt.tabstop = 2
     vim.opt.shiftwidth = 2

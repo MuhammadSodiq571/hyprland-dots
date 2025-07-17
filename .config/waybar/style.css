@@ -1,4 +1,3 @@
-/* ----- General ----- */
 @import "colors.css";
 
 * {
@@ -16,7 +15,6 @@ window#waybar {
   transition-duration: .5s;
   box-shadow: inset -0.5 -0.5px #000000;
 }
-/* ----- Workspaces ----- */
 
 #workspaces {
   padding: 2px 12px;
@@ -32,7 +30,15 @@ window#waybar {
   transition: all 0.1s linear;
 }
 
-#workspaces button:hover {
+#workspaces button:hover,
+#workspaces button.active:hover,
+#window:hover,
+#clock:hover,
+#battery:hover,
+#language:hover,
+#cpu:hover,
+#memory:hover,
+#pulseaudio:hover {
   color: @vl;
   transition: all 0.1s linear;
 }
@@ -41,15 +47,9 @@ window#waybar {
   color: @fg;
 }
 
-#workspaces button.active:hover {
-  color: @vl;
-}
-
 #workspaces button.urgent {
   color: @red;
 }
-
-/* ----- Button..? ----- */
 
 button {
   box-shadow: inset 0 -3px transparent;
@@ -62,8 +62,6 @@ button:hover {
   box-shadow: inset 0 -3px transparent;
 }
 
-/* ----- Window ----- */
-
 #window {
   padding: 2px 15px;
   margin: 5px;
@@ -72,28 +70,19 @@ button:hover {
   border-radius: 10px;
 }
 
-#window:hover {
-  color: @vl;
-}
-
-/* ----- Tray ----- */
-
 #tray {
-  padding: 2px 15px;
+  padding: 2px 12px;
   margin: 5px;
   background-color: #262626;
   border-radius: 10px;
 }
 
-/* ----- Taskbar ----- */
-
-#taskbar {
-  padding-left: 5px;
-  padding-right: 0px;
-  margin: 5px 5px 5px 5px;
-  background-color: @bg;
-  border-radius: 0px;
-}
+/* #taskbar { */
+  /* padding: 2px 12px; */
+  /* margin: 3px 0px 3px 0px; */
+  /* background-color: #262626; */
+  /* border-radius: 10px; */
+/* } */
 
 #taskbar button {
   box-shadow: none;
@@ -108,10 +97,8 @@ button:hover {
   transition: all 0.1s linear;
 }
 
-/* ----- Language ----- */
-
 #language {
-  padding: 2px 15px;
+  padding: 2px 12px;
   padding-left: 8px;
   margin: 5px;
   color: @fg;
@@ -119,25 +106,34 @@ button:hover {
   border-radius: 10px;
 }
 
-#language:hover {
-  color: @blue;
-}
-
-/* ----- Battery ----- */
-
 #battery {
-  padding: 2px 15px;
+  padding: 2px 12px;
   margin: 5px;
   color: @fg;
   background-color: #262626;
   border-radius: 10px;
 }
 
-#battery:hover {
-  color: @green;
+#cpu,
+#memory {
+  padding: 2px 12px;
+  margin: 5px;
+  color: @fg;
+  background-color: #262626;
+  /* border-radius: 10px; */
 }
 
-/* ----- Pulseaudio (aka Pipewire) ----- */
+#cpu {
+  padding-right: 7px;
+  margin-right: 0px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+#memory {
+  padding-left: 7px;
+  margin-left: 0px;
+  border-radius: 0px 10px 10px 0px;
+}
 
 #pulseaudio {
   padding: 2px 15px;
@@ -147,27 +143,9 @@ button:hover {
   border-radius: 10px;
 }
 
-#custom-mic {
-    padding: 2px 15px;
-    margin: 5px;
-    color: @fg;
-    background-color: #262626;
-    border-radius: 10px;
-}
-
 #pulseaudio.muted {
   color: @red;
 }
-
-#pulseaudio:hover {
-  color: @yellow;
-}
-
-#custom-mic:hover {
-    color: @yellow;
-}
-
-/* ----- Clock ----- */
 
 #clock {
   padding: 2px 15px;
@@ -176,21 +154,6 @@ button:hover {
   background-color: #262626;
   border-radius: 8px;
 }
-
-#clock:hover {
-  color: @sky;
-}
-
-/* ----- Weather ----- */
-
-#custom-weather {
-  padding: 2px 15px;
-  margin: 5px;
-  color: @fg;
-  background-color: @bg;
-  border-radius: 0px 10px 10px 0px;
-}
-/* ----- Tooltip ----- */
 
 tooltip {
   background: @bg2;

@@ -3,8 +3,7 @@ alias la='lsd -la'
 alias clock='tty-clock -scC 3'
 alias nf='fastfetch -c all'
 alias ff='fastfetch'
-alias pf='fastfetch -c ~/.config/fastfetch/2.jsonc -l artix2_small'
-alias pacrep='pacman -Q | grep -i'
+alias pf='fastfetch -c ~/.config/fastfetch/2.jsonc'
 alias enru='trans en:ru'
 alias ruen='trans ru:en'
 alias enuz='trans en:uz'
@@ -13,8 +12,8 @@ alias lsblk='sudo lsblk -fo NAME,FSTYPE,LABEL,FSAVAIL,FSUSE%,MOUNTPOINTS'
 
 abbr -a pm pacman
 abbr -a pms paru -S
-abbr -a parus paru -S
 abbr -a pmr paru -Rns
+abbr -a pmq pacman -Qs
 abbr -a grepi grep -i
 abbr -a b btop
 abbr -a c clear
