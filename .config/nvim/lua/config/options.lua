@@ -16,7 +16,7 @@ vim.opt.wrap = false -- Disable line wrapping
 vim.opt.smoothscroll = true -- Enable smooth scrolling
 vim.opt.scrolloff = 1 -- Minimum number of screen lines to keep above and below the cursor
 
-vim.opt.mouse = '' -- Disable mouse support
+-- vim.opt.mouse = '' -- Disable mouse support
 
 vim.opt.splitright = true -- Split vertical window to the right
 vim.opt.splitbelow = true

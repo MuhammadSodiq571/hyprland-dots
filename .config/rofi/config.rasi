@@ -1,5 +1,5 @@
 configuration {
-    modi: "drun,run";
+    modi: "run,drun,calc";
     lines: 5;
     font: "JetBrainsMono Nerd Font 14";
     show-icons: true;
@@ -13,8 +13,9 @@ configuration {
     matching: "fuzzy";
     sort: true;
     hide-scrollbar: true;
-    display-drun: "   Apps ";
     display-run: "   Run ";
+    display-drun: "   Apps ";
+    display-calc: "  Calc ";
     sidebar-mode: true;
 }
 

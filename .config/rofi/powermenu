@@ -1,16 +1,16 @@
 #!/bin/sh
 
 option=$(
-    printf "   Shutdown\n   Reboot\n   Lock" | \
+    printf "   Lock\n   Shutdown\n   Reboot" | \
         rofi -dmenu -i -replace \
         -theme powermenu \
         -p 'Power Menu'
 )
 
 case "$option" in
-  "   Shutdown") sudo /sbin/poweroff ;;
-  "   Reboot") sudo /sbin/reboot ;;
-  "   Lock") /bin/hyprlock ;;
-  *) exit 0 ;;
+    "   Lock") /bin/hyprlock ;;
+    "   Shutdown") sudo /sbin/poweroff ;;
+    "   Reboot") sudo /sbin/reboot ;;
+    *) exit 0 ;;
 esac
 
